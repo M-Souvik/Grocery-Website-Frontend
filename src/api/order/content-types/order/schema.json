@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "integer"
+    },
+    "OrderedItemList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ordered-item.ordered-item"
+    },
+    "paymentId": {
+      "type": "text"
+    },
+    "OrderAmt": {
+      "type": "integer"
+    }
+  }
+}

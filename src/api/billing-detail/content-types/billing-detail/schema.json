@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "billing_details",
+  "info": {
+    "singularName": "billing-detail",
+    "pluralName": "billing-details",
+    "displayName": "Billing detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "billing_details"
+    }
+  }
+}
